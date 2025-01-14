@@ -1,11 +1,60 @@
-body, html {
-    font-family: "SF Pro Display", sans-serif !important;
-}
-
-code, pre, kbd, samp, tt, .monospace {
-    font-family: "JetBrains Mono", monospace !important;
-}
-
-.popup, .menu, .modal, .dropdown, .tooltip, .context-menu {
-    font-family: "SF Pro Display", sans-serif !important;
-}
+@-moz-document url(chrome://browser/content/browser.xhtml) {
+    /* Change font for all browser UI elements */
+    * {
+      font-family: "SF Pro Display", sans-serif !important;
+    }
+  
+    /* Address bar */
+    #urlbar,
+    #urlbar * {
+      font-family: "SF Pro Display", sans-serif !important;
+    }
+  
+    /* Tabs */
+    .tab-label,
+    .tab-label-container,
+    .tab-text {
+      font-family: "SF Pro Display", sans-serif !important;
+    }
+  
+    /* Bookmarks bar */
+    #PlacesToolbarItems toolbarbutton {
+      font-family: "SF Pro Display", sans-serif !important;
+    }
+  
+    /* Context menus */
+    menupopup,
+    menu,
+    menuitem {
+      font-family: "SF Pro Display", sans-serif !important;
+    }
+  
+    /* Toolbar buttons */
+    toolbarbutton {
+      font-family: "SF Pro Display", sans-serif !important;
+    }
+  
+    /* Sidebar */
+    #sidebar-box,
+    #sidebar-box * {
+      font-family: "SF Pro Display", sans-serif !important;
+    }
+  
+    /* Dropdown menus */
+    panel,
+    .panel-arrowcontent {
+      font-family: "SF Pro Display", sans-serif !important;
+    }
+  
+    /* Status bar */
+    #statuspanel,
+    #statuspanel-label {
+      font-family: "SF Pro Display", sans-serif !important;
+    }
+  
+    /* Find bar */
+    #FindToolbar,
+    #FindToolbar * {
+      font-family: "SF Pro Display", sans-serif !important;
+    }
+  }
